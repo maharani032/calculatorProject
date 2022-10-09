@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="c">C</string>
+    <string name="modulus">%</string>
+    <string name="bagi">/</string>
+</resources>
