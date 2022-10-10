@@ -8,7 +8,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:gravity="bottom"
-    android:layout_marginBottom="20dp"
+    android:layout_marginBottom="30dp"
     >
     <TextView
         android:id="@+id/resulttv"
@@ -24,7 +24,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:textAlignment="textEnd"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            />
 
 
     <LinearLayout
@@ -53,14 +54,14 @@
             android:layout_weight="1"
             android:text="@string/bagi"
             android:layout_marginEnd="10dp"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/backspace"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="0.5"
-            android:background="@drawable/ic_baseline_backspace_24"
-            android:contentDescription="@string/backspace" />
+ <ImageButton
+     android:id="@+id/backspace"
+     android:layout_width="50dp"
+     android:contentDescription="@string/backspace"
+     android:layout_height="50dp"
+     android:layout_weight="0.5"
+     android:backgroundTint="#878787"
+     android:background="@drawable/ic_baseline_backspace_24"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,13 +72,14 @@
 
         <Button
             android:id="@+id/seven"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
             android:layout_marginEnd="20dp"
-            android:text="@string/_7"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:backgroundTint="#878787"
+            android:text="@string/_7"
+            android:textColor="@color/white"/>
         <Button
             android:id="@+id/eight"
             android:layout_width="50dp"
@@ -86,7 +88,8 @@
             android:layout_marginEnd="20dp"
             android:text="@string/_8"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/white" />
         <Button
             android:id="@+id/nine"
             android:layout_width="50dp"
@@ -95,6 +98,7 @@
             android:text="@string/_9"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
             style="?android:attr/buttonBarButtonStyle" />
         <Button
             android:id="@+id/kali"
@@ -102,7 +106,9 @@
             android:layout_height="50dp"
             android:backgroundTint="#878787"
             android:layout_weight="1"
-            android:text="@string/x"
+            android:text="@string/kali"
+            android:textSize="20sp"
+            android:textColor="@color/white"
             style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
     <LinearLayout
@@ -118,6 +124,8 @@
             android:layout_height="50dp"
             android:backgroundTint="#878787"
             android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+
             android:text="@string/_4"
             android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
@@ -129,6 +137,8 @@
             android:layout_marginEnd="20dp"
             android:text="@string/_5"
             android:layout_weight="1"
+            android:textColor="@color/white"
+
             style="?android:attr/buttonBarButtonStyle" />
         <Button
             android:id="@+id/six"
@@ -136,6 +146,7 @@
             android:layout_height="50dp"
             android:backgroundTint="#878787"
             android:text="@string/_6"
+            android:textColor="@color/white"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
@@ -144,6 +155,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:backgroundTint="#878787"
+            android:textColor="@color/white"
             android:layout_weight="1"
             android:text="@string/kurang"
             android:textStyle="bold"
@@ -162,6 +174,7 @@
             android:id="@+id/one"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:textColor="@color/white"
             android:backgroundTint="#878787"
             android:layout_marginEnd="20dp"
             android:text="@string/_1"
@@ -173,6 +186,7 @@
             android:layout_height="50dp"
             android:backgroundTint="#878787"
             android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
             android:text="@string/_2"
             android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
@@ -180,6 +194,7 @@
             android:id="@+id/three"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:textColor="@color/white"
             android:backgroundTint="#878787"
             android:text="@string/_3"
             android:layout_marginEnd="20dp"
@@ -190,6 +205,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:backgroundTint="#878787"
+            android:textColor="@color/white"
             android:layout_weight="1"
             android:text="@string/tambah"
             android:textStyle="bold"
@@ -209,6 +225,7 @@
             android:layout_height="50dp"
             android:backgroundTint="#878787"
             android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
             android:text="@string/c"
             android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
@@ -218,6 +235,7 @@
             android:layout_height="50dp"
             android:backgroundTint="#878787"
             android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
             android:text="@string/_0"
             android:layout_weight="1"
             style="?android:attr/buttonBarButtonStyle" />
@@ -226,6 +244,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:backgroundTint="#878787"
+            android:textColor="@color/white"
             android:layout_weight="2"
             android:text="@string/hasil"
             style="?android:attr/buttonBarButtonStyle" />
