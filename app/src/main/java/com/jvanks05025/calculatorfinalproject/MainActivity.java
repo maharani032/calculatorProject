@@ -174,11 +174,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //    Koperasi= " %"
 //    operasi="%"
     public void declareOperation (String KOperasi,String operasi){
-        if(resulttv.getText().length()==0){
+        if(resulttv.getText().length()==0&& inputtv.getText().length()!=0){
             resulttv.setText(input+ KOperasi);
             inputresult=input;
             input="";
             inputtv.setText(input);
+        }
+        else if(resulttv.getText().length()==0 && inputtv.getText().length()==0){
+//            jika resulttv kosong dan input kosong
+            if(operasi == "-"){
+//                kalau inputnya tidak ada tetapi menekan tombol -/+
+                input="-";
+                Log.i("informasi",input);
+                inputtv.setText(operasi);
+
+            }
+            else{
+                input="";
+                inputresult="";
+                inputtv.setText(input);
+                resulttv.setText(inputresult);
+            }
         }
         else if (resulttv.getText().length()!=0&& inputtv.getText().length()!=0) {
 
@@ -188,7 +204,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             input="";
             inputtv.setText(input);
         }
-        else if(!resulttv.getText().toString().contains(operasi)){
+        else if(
+        !resulttv.getText().toString().endsWith(KOperasi)
+        ){
+//? kalau - sama - tidak bisa
             resulttv.setText(inputresult + KOperasi);
             result=Double.parseDouble(inputresult);
         }
@@ -196,11 +215,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void checkResultTextView(String number){
         if(     resulttv.getText().length()==0||
-                resulttv.getText().toString().contains("*")||
-                resulttv.getText().toString().contains("-")||
-                resulttv.getText().toString().contains("+")||
-                resulttv.getText().toString().contains("/")||
-                resulttv.getText().toString().contains("%")
+                resulttv.getText().toString().endsWith("*")||
+                resulttv.getText().toString().endsWith("-")||
+                resulttv.getText().toString().endsWith("+")||
+                resulttv.getText().toString().endsWith("/")||
+                resulttv.getText().toString().endsWith("%")
         ){
             input=input+number;
             inputtv.setText(input);
