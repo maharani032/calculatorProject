@@ -18,14 +18,14 @@
         android:layout_marginHorizontal="10dp"
         android:textSize="25sp"
         android:textAlignment="textEnd"/>
-        <TextView
-            android:id="@+id/inputtv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:textAlignment="textEnd"
-            android:textSize="30sp"
-            />
+    <TextView
+        android:id="@+id/inputtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="30sp"
+        />
 
 
     <LinearLayout
@@ -36,217 +36,176 @@
         android:orientation="horizontal"
         >
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/modulus"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
             android:text="@string/modulus"
-            android:layout_weight="1"/>
-
-
-        <Button
+            android:layout_weight="1"
+            style="@style/buttonNumber"
+            />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bagi"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
             android:layout_weight="1"
             android:text="@string/bagi"
-            android:layout_marginEnd="10dp"/>
- <ImageButton
-     android:id="@+id/backspace"
-     android:layout_width="50dp"
-     android:contentDescription="@string/backspace"
-     android:layout_height="50dp"
-     android:layout_weight="0.5"
-     android:backgroundTint="#878787"
-     android:background="@drawable/ic_baseline_backspace_24"/>
+            style="@style/buttonNumber"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backspace"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/ic_baseline_backspace_24"
+            android:contentDescription="@string/backspace"
+            android:backgroundTint="#787878"
+            android:layout_marginEnd="20dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         >
-
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seven"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:backgroundTint="#878787"
             android:text="@string/_7"
-            android:textColor="@color/white"/>
-        <Button
+            style="@style/buttonNumber"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/eight"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
             android:text="@string/_8"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle"
-            android:textColor="@color/white" />
-        <Button
+            style="@style/buttonNumber"
+            />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/nine"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
             android:text="@string/_9"
-            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:textColor="@color/white"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber"
+            />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/kali"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
             android:layout_weight="1"
             android:text="@string/kali"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            style="?android:attr/buttonBarButtonStyle" />
+            style="@style/buttonNumber"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         >
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/four"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/white"
-
             android:text="@string/_4"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber"
+            />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/five"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
             android:text="@string/_5"
             android:layout_weight="1"
-            android:textColor="@color/white"
-
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber"
+            />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/six"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
             android:text="@string/_6"
-            android:textColor="@color/white"
-            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber"
+            />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/kurang"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:textColor="@color/white"
             android:layout_weight="1"
             android:text="@string/kurang"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            style="?android:attr/buttonBarButtonStyle" />
+            style="@style/buttonNumber" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         >
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/one"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:textColor="@color/white"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
             android:text="@string/_1"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber" />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/two"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/white"
             android:text="@string/_2"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/three"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:textColor="@color/white"
-            android:backgroundTint="#878787"
             android:text="@string/_3"
-            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber" />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/tambah"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:textColor="@color/white"
             android:layout_weight="1"
             android:text="@string/tambah"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            style="?android:attr/buttonBarButtonStyle" />
+            style="@style/buttonNumber" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         >
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/clear"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/white"
             android:text="@string/c"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber" />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/zero"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/white"
             android:text="@string/_0"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle" />
-        <Button
+            style="@style/buttonNumber" />
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/hasil"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:backgroundTint="#878787"
-            android:textColor="@color/white"
             android:layout_weight="2"
             android:text="@string/hasil"
-            style="?android:attr/buttonBarButtonStyle" />
+            style="@style/buttonNumber"/>
     </LinearLayout>
 </LinearLayout>

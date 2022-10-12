@@ -123,6 +123,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     input="";
                     inputtv.setText(input);
                 }
+                else{
+                    inputresult="";
+                    input="";
+                    resulttv.setText(inputresult);
+                    inputtv.setText(input);
+                }
                 break;
             case(R.id.tambah):
                 declareOperation(" +","+");
